@@ -1,0 +1,22 @@
+.draggable {
+  width: 300px;
+  height: 200px;
+  background: #ccc;
+  position: relative;
+}
+
+.draggable.dragging {
+  user-select: none;
+}
+
+.dragger {
+  height: 30px;
+  background: #555;
+}
+
+.dragger::before {
+  content: "window";
+  color: #fff;
+  margin: 5px;
+  display: inline-block;
+}

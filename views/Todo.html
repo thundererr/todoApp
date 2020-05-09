@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Todo Page</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/todo.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/dragable_todo.css">
+</head>
+
+<body>
+	<header class = "header">
+		<div class = "header-content"></div>
+	</header>
+	<!-- <div class = "modal-btn">
+			<button class = "add button">click to open modal</button>
+	</div> -->
+	<div class="todo">
+		<div class = "todo-box">
+			<div class = "todo-header">
+				<h2> Todo items</h2>
+				<button class="add button" data-app = "todo">+</button>
+			</div>
+			<div class="todo-items">
+				<ul>
+				</ul> 
+				<!-- <div class="item">  removed static content and loaded from localStorage
+					<p> this is first task</p>
+					<button class="remove button">-</button>
+				</div>
+				<div class="item">
+					<p> this is second task</p>
+					<button class="remove button">-</button>
+				</div> -->
+			</div>
+		</div>
+		<div class = "inprogres-box">
+			<div class = "todo-header">
+				<h2> Inprogres items</h2>
+				<button class="add button" data-app = "inprogres">+</button>
+			</div>
+			<div class="todo-items">
+				<ul></ul>
+				<!--<div class="item">
+					<p> this is first task</p>
+					<button class="remove button">-</button>
+				</div>
+				<div class="item">
+					<p> this is second task</p>
+					<button class="remove button">-</button>
+				</div> -->
+			</div>
+		</div>
+		<div class="done-box">
+			<div class = "todo-header">
+				<h2> Done items</h2>
+				<button class="add button" data-app = "done">+</button>
+			</div>
+			<div class="todo-items">
+				<ul></ul>
+				<!--<div class="item">
+					<p> this is first task</p>
+					<button class="remove button">-</button>
+				</div>
+				<div class="item">
+					<p> this is second task</p>
+					<button class="remove button">-</button>
+				</div>-->
+			</div>
+		</div>
+		<div class = "modal">
+			
+			<div class = "modal-content">
+				<button class="close button"> X</button>
+				<textarea class="modal-text" placeholder="Add task"></textarea>
+				<div class = "modal-btn">
+					<button class = "save-button"> save</button>
+					<button class = "cancel-button">cancel</button>	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<footer class = "footer">
+	<div class = "footer-content"></div>
+	<script type="text/javascript" src = "/javascripts/todo.js"></script>
+	<script type="text/javascript" src = "/javascripts/dragable_todo_v2.js"></script>
+</footer>
+</html>
